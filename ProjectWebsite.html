@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJ Tech Solutions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+nav{
+    background:#0f172a;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.about,
+.services,
+.contact{
+    background:white;
+    margin:20px 0;
+    border-radius:10px;
+    padding:30px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+.hero{
+    background:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:2.5rem;
+}
+
+.hero p{
+    margin:15px 0;
+}
+
+.hero a{
+    display:inline-block;
+    background:#1e3a8a;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MJ Tech Solutions</h1>
+    <p>Professional Web Development & IT Services</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h2>Build Your Future Online</h2>
+        <p>Modern websites, programming solutions, and IT support.</p>
+        <a href="#contact">Get Started</a>
+    </div>
+</section>
+
+<div class="container">
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        MJ Tech Solutions helps businesses and students with web development,
+        programming assistance, and technology support. Our mission is to
+        deliver reliable and affordable digital solutions.
+    </p>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern responsive websites for businesses and personal brands.</p>
+        </div>
+
+        <div class="card">
+            <h3>Programming Help</h3>
+            <p>Assistance with coding projects and learning programming.</p>
+        </div>
+
+        <div class="card">
+            <h3>IT Support</h3>
+            <p>Computer troubleshooting and technical solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consulting</h3>
+            <p>Professional technology advice and planning.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/400/250?1" alt="Gallery Image">
+        <img src="https://picsum.photos/400/250?2" alt="Gallery Image">
+        <img src="https://picsum.photos/400/250?3" alt="Gallery Image">
+        <img src="https://picsum.photos/400/250?4" alt="Gallery Image">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 MJ Tech Solutions | All Rights Reserved</p>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
